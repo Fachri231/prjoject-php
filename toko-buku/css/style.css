@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+body {
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    }
+
+    .daftar-buku h1 {
+        margin-bottom: 20px;
+    }
+
+
+.buku-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+    }
+
+.container {
+    width: 200px;
+    padding: 16px;
+    margin: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    background-color: #fff;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .container:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px;
+  }
+  
+  /* Book Image */
+  .wrap-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .wrap-img img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.penulis {
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+    margin-bottom: 4px;
+}
+
+.judul {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.harga p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  /* Links */
+.container a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@media (max-width: 600px) {
+    .buku-container {
+        justify-content: center;
+    }
+    }
